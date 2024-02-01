@@ -1,0 +1,109 @@
+body {
+  margin: 0px;
+  border-radius: 10px;
+  background-color:  rgb(49, 60, 93);
+}
+
+h1 {
+  margin: 0 0 0 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:  rgb(235, 239, 252);
+  font-size: 4em;
+  padding: 20px;
+  width: 650px;
+}
+
+/* div that holds the divs in the game */
+#game {
+  width: 576px;
+  background-color:  rgb(36, 44, 68);
+  border-radius: 20px;
+  padding: 12px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* styling for the cards in the game */
+#game div{
+  width: 120px; 
+  content:url(https://st.depositphotos.com/1093689/3001/v/450/depositphotos_30010151-stock-illustration-seamless-abstract-colorful-background-of.jpg);  height: 120px;
+  border-radius: 20px;
+  margin: 8px 12px;
+  display: inline-block;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+#game div:hover {
+  cursor: pointer; 
+}
+
+/* a flip effect is toggled when class is flipped */
+div.flipped {
+  transform: rotateY(180deg);
+}
+
+/* style the p element that holds the number of matches during game */
+#matchCounter {
+  width: 220px;
+  height: 30px;
+  background-color: rgb(250, 240, 215);
+  color: black;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0px 5px 100px 5px;
+}
+
+/* style the p element that holds the high score */
+#highScore {
+  width: 220px;
+  height: 30px;
+  background-color: rgb(250, 240, 215);
+  font-size: 25px;
+  color: black;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border-top-left-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 5px 5px 5px;;
+}
+
+/* section that contains highScore, matches, start and restart buttons */
+#controls {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 10px;
+  top: 126px;
+  background-color:  rgb(36, 44, 68);
+  width: 250px;
+  height: 362px;
+  border: 20px solid rgb(101, 87, 87);
+  border-radius: 10px;;
+  z-index: 5;
+}
+
+/* styling for both buttons */
+button {
+  height: 70px;
+  font-size: 25px;
+  font-family:monospace;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  border-radius: 5px;;
+  margin: 4px 5px 5px 5px;
+}
+
+button:hover {
+  background-color: rgb(240, 209, 209);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+i {
+  color: pink;
+}
+
